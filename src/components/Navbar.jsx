@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Plane } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/assets';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-20">
                     <div className="flex-shrink-0 flex items-center">
                         <Link to="/" className="flex items-center gap-2 group">
-                            <img src="/sarus-logo.png" alt="Sarus Aerospace Logo" className="h-10 w-auto brightness-0 invert" />
+                            <img src={getAssetPath("sarus-logo.png")} alt="Sarus Aerospace Logo" className="h-10 w-auto brightness-0 invert" />
                             <span className="text-white font-bold text-xl tracking-wider">SARUS AEROSPACE</span>
                         </Link>
                     </div>

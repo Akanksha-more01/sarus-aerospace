@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/assets';
 
 const Hero = () => {
     return (
@@ -7,7 +8,7 @@ const Hero = () => {
             {/* Background with overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/hero-drone.png"
+                    src={getAssetPath("hero-drone.png")}
                     alt="Aerospace Background"
                     className="w-full h-full object-cover blur-sm scale-105"
                 />

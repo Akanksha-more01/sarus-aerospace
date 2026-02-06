@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -7,10 +7,15 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Training from './pages/Training';
 import DroneDetails from './pages/DroneDetails';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    console.log("Sarus Aerospace App Mounted");
+  }, []);
+
   return (
-    <Router>
+    <HashRouter>
       <div className="flex flex-col min-h-screen bg-secondary">
         <Navbar />
         <main className="flex-grow pt-20">
@@ -25,7 +30,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

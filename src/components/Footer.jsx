@@ -1,5 +1,6 @@
 import { Plane, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/assets';
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="space-y-4">
                         <div className="flex items-center gap-2">
-                            <img src="/sarus-logo.png" alt="Sarus Aerospace Logo" className="h-8 w-auto brightness-0 invert" />
+                            <img src={getAssetPath("sarus-logo.png")} alt="Sarus Aerospace Logo" className="h-8 w-auto brightness-0 invert" />
                             <span className="text-white font-bold text-lg tracking-wider">SARUS AEROSPACE</span>
                         </div>
                         <p className="text-sm text-gray-400">

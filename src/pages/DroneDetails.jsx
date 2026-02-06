@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { droneData } from '../data/droneData';
 import { ArrowLeft, CheckCircle, ShieldCheck, Zap, Activity } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 const DroneDetails = () => {
     const { id } = useParams();
@@ -52,7 +53,7 @@ const DroneDetails = () => {
                         <div className="bg-primary/30 rounded-3xl p-8 border border-white/5 relative group">
                             <div className="absolute inset-0 bg-accent/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             <img
-                                src={drone.image}
+                                src={getAssetPath(drone.image)}
                                 alt={drone.name}
                                 className="w-full h-auto object-contain drop-shadow-2xl relative z-10"
                             />

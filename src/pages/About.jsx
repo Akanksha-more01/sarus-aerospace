@@ -1,10 +1,12 @@
+import { getAssetPath } from '../utils/assets';
+
 const About = () => {
     return (
         <div className="bg-secondary min-h-screen">
             {/* Header */}
             <div className="bg-primary py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
-                    <img src="/sarus-logo.png" alt="Sarus Aerospace Logo" className="h-20 w-auto mx-auto mb-6 brightness-0 invert" />
+                    <img src={getAssetPath("sarus-logo.png")} alt="Sarus Aerospace Logo" className="h-20 w-auto mx-auto mb-6 brightness-0 invert" />
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Sarus Aerospace</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                         Visionaries in aerospace engineering, committed to building a sustainable future for aviation.

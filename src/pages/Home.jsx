@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
 import { Rocket, Shield, Globe, Award, ArrowRight } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
     <div className="bg-secondary/50 p-8 rounded-xl border border-white/5 hover:border-accent/50 transition-all hover:-translate-y-1 hover:shadow-xl">
@@ -73,7 +74,7 @@ const Home = () => {
                         </div>
                         <div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] transition-transform duration-700 group-hover:scale-105 flex items-center justify-center">
                             <img
-                                src="/drones/shourya.png"
+                                src={getAssetPath("drones/shourya.png")}
                                 alt="Shourya VTOL Drone"
                                 className="w-full h-full object-contain drop-shadow-2xl opacity-90"
                             />
@@ -93,7 +94,7 @@ const Home = () => {
                         </div>
                         <div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] transition-transform duration-700 group-hover:scale-105 flex items-center justify-center">
                             <img
-                                src="/drones/torna-real.png"
+                                src={getAssetPath("drones/torna-real.png")}
                                 alt="Torna Drone"
                                 className="w-full h-full object-contain drop-shadow-2xl opacity-90"
                             />
@@ -113,7 +114,7 @@ const Home = () => {
                         </div>
                         <div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] transition-transform duration-700 group-hover:scale-105 flex items-center justify-center">
                             <img
-                                src="/drones/anant-real.png"
+                                src={getAssetPath("drones/anant-real.png")}
                                 alt="Anant Drone"
                                 className="w-full h-full object-contain drop-shadow-2xl opacity-90"
                             />
@@ -133,7 +134,7 @@ const Home = () => {
                         </div>
                         <div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] transition-transform duration-700 group-hover:scale-105 flex items-center justify-center">
                             <img
-                                src="/drones/kisan-real.png"
+                                src={getAssetPath("drones/kisan-real.png")}
                                 alt="Kisan Drone"
                                 className="w-full h-full object-contain drop-shadow-2xl opacity-90"
                             />

@@ -1,9 +1,10 @@
 import { ArrowRight } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 const ProductCard = ({ title, category, image, description }) => (
     <div className="bg-primary rounded-xl overflow-hidden border border-white/5 hover:border-accent/50 transition-all group">
         <div className="h-48 overflow-hidden relative">
-            <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <img src={getAssetPath(image)} alt={title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             <div className="absolute top-4 left-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                 {category}
             </div>
@@ -23,25 +24,25 @@ const Products = () => {
         {
             title: "Shourya",
             category: "VTOL Drone",
-            image: "/drones/shourya.png",
+            image: "drones/shourya.png",
             description: "High-performance fixed-wing VTOL drone designed for long-range surveillance and payload delivery."
         },
         {
             title: "Torna",
             category: "Multirotor Drone",
-            image: "/drones/torna.png",
+            image: "drones/torna.png",
             description: "Versatile multi-rotor drone optimized for stability and precise inspection tasks in various environments."
         },
         {
             title: "Kisan",
             category: "Agriculture",
-            image: "/drones/kisan.png",
+            image: "drones/kisan.png",
             description: "Specialized agricultural drone for precision spraying, crop monitoring, and yield maximization."
         },
         {
             title: "Anant",
             category: "Defense/Industrial",
-            image: "/products/anant.png",
+            image: "products/anant.png",
             description: "Anant is a heavy-lift multi-utility drone designed for high-endurance missions and versatile payload integration."
         },
 

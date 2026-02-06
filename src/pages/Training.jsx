@@ -1,4 +1,5 @@
 import { GraduationCap, Shield, Cog, CheckCircle2, ArrowRight } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 const Training = () => {
     const courses = [
@@ -61,7 +62,7 @@ const Training = () => {
             {/* Hero Section */}
             <div className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-primary">
                 <div className="absolute inset-0 opacity-20">
-                    <img src="/training/training-bg.png" alt="Training Background" className="w-full h-full object-cover" />
+                    <img src={getAssetPath("training/training-bg.png")} alt="Training Background" className="w-full h-full object-cover" />
                 </div>
                 <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
                     <div className="flex-1 text-center md:text-left">
@@ -77,7 +78,7 @@ const Training = () => {
                     </div>
                     <div className="flex-1">
                         <div className="bg-secondary/80 backdrop-blur-md p-2 rounded-[2rem] border border-white/10 shadow-2xl relative">
-                            <img src="/training/training-main.png" alt="Training Center" className="rounded-[1.5rem] w-full h-auto" />
+                            <img src={getAssetPath("training/training-main.png")} alt="Training Center" className="rounded-[1.5rem] w-full h-auto" />
                             <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-2xl shadow-xl hidden lg:block">
                                 <p className="text-3xl font-black italic">100%</p>
                                 <p className="text-[10px] uppercase font-bold tracking-widest text-white/80">DGCA Compliant</p>
@@ -146,13 +147,13 @@ const Training = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="group overflow-hidden rounded-[2rem] border border-white/10">
-                            <img src="/training/training1.png" alt="Training 1" className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700" />
+                            <img src={getAssetPath("training/training1.png")} alt="Training 1" className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
                         <div className="group overflow-hidden rounded-[2rem] border border-white/10 transform md:translate-y-8">
-                            <img src="/training/training2.png" alt="Training 2" className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700" />
+                            <img src={getAssetPath("training/training2.png")} alt="Training 2" className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
                         <div className="group overflow-hidden rounded-[2rem] border border-white/10">
-                            <img src="/training/training3.png" alt="Training 3" className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700" />
+                            <img src={getAssetPath("training/training3.png")} alt="Training 3" className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
                     </div>
                 </div>

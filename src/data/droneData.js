@@ -3,7 +3,7 @@ export const droneData = {
         id: "shourya",
         name: "Shourya",
         tagline: "Multiple Payload Compatible VTOL",
-        image: "/drones/shourya.png",
+        image: "drones/shourya.png",
         category: "Defense & Surveillance",
         description: "Shourya is a high-performance Vertical Take-Off and Landing (VTOL) drone designed for mission-critical operations. It combines the efficiency of fixed-wing flight with the flexibility of a multi-rotor.",
         features: [
@@ -31,7 +31,7 @@ export const droneData = {
         id: "torna",
         name: "Torna",
         tagline: "Industrial Multirotor Excellence",
-        image: "/drones/torna-real.png",
+        image: "drones/torna-real.png",
         category: "Industrial Inspection",
         description: "Torna is a rugged, stable, and highly reliable multirotor platform optimized for precise industrial inspections and monitoring in challenging environments.",
         features: [
@@ -59,7 +59,7 @@ export const droneData = {
         id: "anant",
         name: "Anant",
         tagline: "Heavy Lift Multi-Utility Platform",
-        image: "/drones/anant-real.png",
+        image: "drones/anant-real.png",
         category: "Enterprise & Defense",
         description: "Anant is a workhorse designed for heavy-duty applications. Its modular design allows it to adapt to a wide range of tasks, from logistics to tactical reconnaissance.",
         features: [
@@ -87,7 +87,7 @@ export const droneData = {
         id: "kisan",
         name: "Kisan",
         tagline: "Precision Agriculture Drone",
-        image: "/drones/kisan-real.png",
+        image: "drones/kisan-real.png",
         category: "Agriculture",
         description: "Kisan is specialized for modern farming. It offers precision spraying and monitoring capabilities that help farmers maximize yield while reducing chemical usage.",
         features: [
